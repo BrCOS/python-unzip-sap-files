@@ -21,20 +21,21 @@ Based on the files provided it can detect the SAP version (ECC or S/4HANA), extr
 - **Peace of Mind**: With structured logging and consistent output, this tool is ideal for automation, auditing, or compliance. purposes.
 
 ## Features
-- Detects the SAP version (ECC or S/4HANA)
-- Only extracts files based on keywords (e.g., `BSEG`, `ACDOCA`, `BKPF`, etc.)
-- Compares trial balance files (`GLT0` vs `FAGFLEXT`) and extracts only the larger one
-- Extracts only `.txt` files, ignoring folders and other file types into the same unzip folder
+- Detects the SAP version (ECC or S/4HANA).
+- Only extracts files based on keywords (e.g., `BSEG`, `ACDOCA`, `BKPF`, etc...).
+- Compares trial balance files (`GLT0` vs `FAGFLEXT`) and extracts only the larger one.
+- Extracts only `.txt` files, ignoring folders and other file types into the same unzip folder.
+- No external libraries required - uses only Python standard library.
 
 ## Log Features
 - Generates a log file with:
-  - Timestamp
-  - Original ZIP path
-  - Output folder path
-  - Extracted files (grouped by zip source)
-  - Any errors encountered
-  - Total execution time
-  - SAP version and trial balance used
+  - Timestamp.
+  - Original ZIP path.
+  - Output folder path.
+  - Extracted files (grouped by zip source).
+  - Any errors encountered.
+  - Total execution time.
+  - SAP version and trial balance used.
 
 ## Project Structure
 ```plaintext
